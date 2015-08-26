@@ -40,6 +40,7 @@ The following is some of the user experience (UX) and functionality that the ACE
   * Save screening outcomes locally
   * Present screening outcomes as report PDFs
   * Be embeddable
+  * Support multiple languages (with initial focus on English, Spanish, Russian, French, and German)
 
 ## Roadmap
 The roadmap for the ACE Screener is as follows:

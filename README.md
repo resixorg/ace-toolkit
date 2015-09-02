@@ -4,7 +4,7 @@
 **The ACE Screener by the Resix Organization is a web-based application that allows for a simple, convenient and anonymous questionnaire-based screening of Adverse Childhood Experiences (ACEs).**
 
 ## About Resix
-The Resix Organisation (www.resix.org) is a non-profit foundation developing open source software for self-empowerment, peer-based support, mental health betterment, and societal development. 
+The Resix Organisation (www.resix.org) is a non-profit foundation developing open source software for resilience, self-empowerment, peer-based support, mental health, and societal development. 
 
 The Resix Organisation also works to build and release IT-mediated tools and interventions as _open content_, thereby supporting and stimulating the democratization of such tools and interventions. 
 

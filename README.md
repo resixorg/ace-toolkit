@@ -47,8 +47,8 @@ The roadmap for the ACE Screener is as follows:
 
 | Version | When | Description |
 |---------|------|-------------|
-| 0.1     | September | An alpha-version with limited functionality and with the purpose of providing a proof-of-concept (PoC) of select features of the screener to stakeholders |
-| 0.2     | September | A beta version with more functionality (and fewer errors) |
-| 1.0     | September/October |The first stable version to be used in production use |
+| 0.1     | November | An alpha-version with limited functionality and with the purpose of providing a proof-of-concept (PoC) of select features of the screener to stakeholders |
+| 0.2     | November | A beta version with more functionality (and fewer errors) |
+| 1.0     | November/December |The first stable version to be used in production use |
 
 _All dates are 2015 dates._

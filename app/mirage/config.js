@@ -1,5 +1,36 @@
 export default function() {
 
+  // When listing classic qnaires
+  this.get('/classics', function(db, request) {
+      return {classics: db.classics};
+  });
+
+  this.post('/classics', function(db, request) {
+      let attrs = JSON.parse(request.requestBody);
+      let classic = db.classics.insert(attrs);
+      return {
+          classics: {
+              type: 'classic',
+              id: classic.id,
+              attributes: classic
+          }
+      };
+  });
+  this.patch('/classics/:id', function(db, request) {
+      let attrs = JSON.parse(request.requestBody);
+      let classic = db.classics.update(attrs.data.id, attrs.data.attributes);
+      return {
+          classics: {
+              type: 'classic',
+              id: classic.id,
+              attributes: classic
+          }
+      };
+  });
+
+  // When deleting a classic qnaire
+  this.del('/classics/:id');
+
   // These comments are here to help you get started. Feel free to delete them.
 
   /*

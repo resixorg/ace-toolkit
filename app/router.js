@@ -6,7 +6,11 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
-	this.route('classic', {path: '/classic'})
+	this.route('classics', function(){
+		this.route('index', {path: '/'}),
+		this.route('new', {path: '/new'})
+	});
+	this.route('guide');
 });
 
 export default Router;

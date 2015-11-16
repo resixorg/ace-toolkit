@@ -1,0 +1,11 @@
+<section >
+	<ul class="flex-container">
+		{{#each model as |qnaire|}}
+		<li class="flex-item">
+			{{#link-to "classics.classic" classic}}
+				{{classic-qnaire-list qnaire=qnaire}}
+			{{/link-to}}
+		</li>
+		{{/each}}
+	</ul>
+</section>

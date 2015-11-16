@@ -15,5 +15,8 @@
     "pretender": "~0.10.1",
     "lodash": "~3.7.0",
     "Faker": "~3.0.0"
+  },
+  "devDependencies": {
+    "bootstrap": "~3.3.5"
   }
 }

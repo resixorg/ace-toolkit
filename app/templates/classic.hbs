@@ -1,0 +1,16 @@
+{{!-- The main template for /classic --}}
+<section>
+	<header>
+		Filled-out Classic Questionnaires
+	</header>
+</section>
+
+<section >
+	<ul class="flex-container">
+		{{#each model as |qnaire|}}
+		<li class="flex-item">
+			{{classic-qnaire qnaire=qnaire}}
+		</li>
+		{{/each}}
+	</ul>
+</section>

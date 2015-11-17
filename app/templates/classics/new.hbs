@@ -1,3 +1,26 @@
-{{input type="text" value=firstName size="50"}}<br/>
-{{input type="text" value=lastName size="50"}}<br/>
-
+<div class="container">
+	<div class="page-header">
+		<h1>ACE Score Calculator</h1>
+	</div>
+	<form>
+	  <div class="form-group">
+	    <label for="firstName">First Name</label>
+		{{input type="text" value=firstName size="50" id="exampleInputEmail1" class="form-control" placeholder="Email"}}<br/>
+	  </div>
+	  <div class="form-group">
+	    <label for="exampleInputPassword1">Password</label>
+	    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+	  </div>
+	  <div class="form-group">
+	    <label for="exampleInputFile">File input</label>
+	    <input type="file" id="exampleInputFile">
+	    <p class="help-block">Example block-level help text here.</p>
+	  </div>
+	  <div class="checkbox">
+	    <label>
+	      <input type="checkbox"> Check me out
+	    </label>
+	  </div>
+	  <button type="submit" class="btn btn-default">Submit</button>
+	</form>
+</div>

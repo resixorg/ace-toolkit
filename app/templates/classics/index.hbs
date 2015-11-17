@@ -1,11 +1,13 @@
-<section >
-	<ul class="flex-container">
-		{{#each model as |qnaire|}}
-		<li class="flex-item">
-			{{#link-to "classics.classic" classic}}
-				{{classic-qnaire-list qnaire=qnaire}}
-			{{/link-to}}
-		</li>
-		{{/each}}
-	</ul>
+<section>
+	<div class="container">
+		<ul class="flex-container">
+			{{#each model as |classic|}}
+			<li class="flex-item">
+				{{#link-to "classics.classic" classic}}
+				{{classic-qnaire-list qnaire=classic}}
+				{{/link-to}}
+			</li>
+			{{/each}}
+		</ul>
+	</div>
 </section>

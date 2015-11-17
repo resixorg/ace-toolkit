@@ -9,6 +9,8 @@ module.exports = function(defaults) {
 
   app.import('bower_components/bootstrap/dist/css/bootstrap.min.css');
   app.import('bower_components/bootstrap/dist/js/bootstrap.min.js');
+  app.import('bower_components/moment/min/moment.min.js');
+
 /*  app.import('bower_components/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2');
 */
   // Use `app.import` to add additional libraries to the generated

@@ -1,7 +1,16 @@
 {{!-- The classic questionnaire view --}}
+{{!-- TODO: Refactor the name to classic-qnaire-list-item.hbs --}}
 <div>
-{{qnaire.prettyDate}}<br/>
-{{qnaire.firstName}}<br/>
-{{qnaire.aceScore}}
+	<ul class="list-unstyled qnaire-list-item">
+		<li class="qnaire-list-item heading">
+			{{qnaire.firstName}}
+		</li>
+		<li class="qnaire-list-item item">
+			<span class="label label-primary">ACE Score</span> {{qnaire.aceScore}}
+		</li>
+		<li class="qnaire-list-item item">
+			<span class="label label-primary">Date</span> {{qnaire.prettyDate}}
+		</li>
+	</ul><br/>
 </div>
 

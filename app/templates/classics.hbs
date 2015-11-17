@@ -1,9 +1,13 @@
 {{!-- The main template for /classic --}}
 <section>
 	<header>
-		Filled-out Classic Questionnaires <span>{{#link-to 'classics.new'}}Fill-Out Questionnaire{{/link-to}}</span>
+		<div class="container">
+			<div class="page-header">
+  				<h2>Completed Screenings <button type="button" class="btn btn-default navbar-btn"><a>New</a></button> <button type="button" class="btn btn-default navbar-btn"><a >Clear</a></button></h2>
+			</div>
+			{{!-- Filled-out Classic Questionnaires <span>{{#link-to 'classics.new'}}Fill-Out Questionnaire{{/link-to}}</span> --}}
+		</div>
 	</header>
 </section>
-
 {{!-- {{classic-qnaire-input action="createClassicQnaire"}} --}}
 {{outlet}}

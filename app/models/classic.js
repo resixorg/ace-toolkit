@@ -4,8 +4,7 @@ export default DS.Model.extend({
   date: DS.attr('date'),
 
   prettyDate: Ember.computed('date', function(){
-    const date = this.get('date');
-    return `${date.getFullYear()}-${date.getMonth()+1}-${date.getDate()}`;
+    return moment(this.get('date')).format("YYYY-MM-DD HH:MM");
   }),
 
   firstName: DS.attr('string'),

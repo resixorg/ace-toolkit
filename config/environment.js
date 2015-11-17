@@ -6,6 +6,12 @@ module.exports = function(environment) {
     environment: environment,
     baseURL: '/',
     locationType: 'auto',
+
+    // Fix for ember-devtools
+    contentSecurityPolicy: {
+      'script-src': "'self' 'unsafe-inline'"
+    },
+
     EmberENV: {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build
@@ -16,6 +22,9 @@ module.exports = function(environment) {
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created
+      // Load the ember-devtools plugin
+      // TOOD: See if this can be moved into the environment-specific section
+      emberDevTools: {global: true}
     }
   };
 

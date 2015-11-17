@@ -7,24 +7,24 @@ import Mirage, {faker} from 'ember-cli-mirage';
 
 export default Mirage.Factory.extend({
   date() {return faker.date.future()},
-  firstName() {return faker.name.firstName()},
-  lastName() {return faker.name.lastName()},
+  'first-name'() {return faker.name.firstName()},
+  'last-name'() {return faker.name.lastName()},
   age() {return faker.random.arrayElement([18,25,34,45,65])},
 
-  q1Score() {return faker.random.arrayElement([true, false])},
-  q2Score() {return faker.random.arrayElement([true, false])},
-  q3Score() {return faker.random.arrayElement([true, false])},
-  q4Score() {return faker.random.arrayElement([true, false])},
-  q5Score() {return faker.random.arrayElement([true, false])},
-  q6Score() {return faker.random.arrayElement([true, false])},
-  q7Score() {return faker.random.arrayElement([true, false])},
-  q8Score() {return faker.random.arrayElement([true, false])},
-  q9Score() {return faker.random.arrayElement([true, false])},
-  q10Score() {return faker.random.arrayElement([true, false])},
-  q11Score() {return faker.random.arrayElement([true, false])},
-  q12Score() {return faker.random.arrayElement([true, false])},
+  'q1-score'() {return faker.random.arrayElement([true, false])},
+  'q2-score'() {return faker.random.arrayElement([true, false])},
+  'q3-score'() {return faker.random.arrayElement([true, false])},
+  'q4-score'() {return faker.random.arrayElement([true, false])},
+  'q5-score'() {return faker.random.arrayElement([true, false])},
+  'q6-score'() {return faker.random.arrayElement([true, false])},
+  'q7-score'() {return faker.random.arrayElement([true, false])},
+  'q8-score'() {return faker.random.arrayElement([true, false])},
+  'q9-score'() {return faker.random.arrayElement([true, false])},
+  'q10-score'() {return faker.random.arrayElement([true, false])},
+  'q11-score'() {return faker.random.arrayElement([true, false])},
+  'q12-score'() {return faker.random.arrayElement([true, false])},
 
-  aceScore() {return faker.random.arrayElement([0,1,2,3,4,5,6,7,8,9,10,11,12])}
+  'ace-score'() {return faker.random.arrayElement([0,1,2,3,4,5,6,7,8,9,10,11,12])}
 
   // name: 'Pete',                         // strings
   // age: 20,                              // numbers

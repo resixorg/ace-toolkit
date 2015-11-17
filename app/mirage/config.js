@@ -2,14 +2,19 @@ export default function() {
 
   // When listing classic qnaires
   this.get('/classics', function(db, request) {
-      return {classics: db.classics};
+      // Definition of a serializer; will be provided in future versions of Mirage or Ember
+      return {
+        data: db.classics.map(attrs => (
+          {type: 'classic', id: attrs.id, attributes: attrs }
+        ))
+      };
   });
 
   this.post('/classics', function(db, request) {
       let attrs = JSON.parse(request.requestBody);
       let classic = db.classics.insert(attrs);
       return {
-          classics: {
+          data: {
               type: 'classic',
               id: classic.id,
               attributes: classic
@@ -20,7 +25,7 @@ export default function() {
       let attrs = JSON.parse(request.requestBody);
       let classic = db.classics.update(attrs.data.id, attrs.data.attributes);
       return {
-          classics: {
+          data: {
               type: 'classic',
               id: classic.id,
               attributes: classic

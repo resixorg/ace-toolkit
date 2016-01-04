@@ -3,8 +3,6 @@
 ## Introduction
 **The ACE Toolkit by the Resix Organization is an ambitious suite of technology-mediated tools and services that have the collective goal of enabling individuals and therapists alike to screen for, alleviate the effects of, and, to the widest extent possible, aid the prevention of Adverse Childhood Experiences (ACEs) across people of all ages.**
 
-<hr/>
-
 # ACE Toolkit Contents
 The contents of the ACE Toolkit are under active development. Read more about the currently planned products and services below.
 
@@ -15,6 +13,7 @@ The first product released will be a screening tool for ACEs to be used by indiv
 
 [Read more about the ACE Screener on our wiki](https://github.com/resixorg/ace-toolkit/wiki/ACE-Screener)
 
+<hr/>
 
 ## About Resix
 The Resix Organisation (www.resix.org) is a non-profit foundation developing open source software for resilience, self-empowerment, peer-based support, mental health, and societal development. 

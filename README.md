@@ -14,7 +14,7 @@ The ACE Study scientifically proved the link between childhood trauma and long-t
 <hr/>
 
 # ACE Toolkit Contents
-The contents of the ACE Toolkit is under active development.
+The contents of the ACE Toolkit are under active development. Read more about the currently planned products and services below.
 
 ## [ACE Screener](https://github.com/resixorg/ace-toolkit/wiki/ACE-Screener)
 The first product released will be a screening tool for ACEs to be used by individuals and therapist alike. We find that there is a lack of simple and easy-to-use screening tools that allow for easy embedding in therapist and community websites, and which by default preserve the privacy of the people being screened.

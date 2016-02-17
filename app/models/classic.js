@@ -15,6 +15,8 @@ export default DS.Model.extend({
   	return `${this.get('firstName')} ${this.get('lastName')}`;
   }),
 
+  // TODO: Should be defined as boolean values
+  // NOTE: This will require type conversion on the model
   q1Score: DS.attr(),
   q2Score: DS.attr(),
   q3Score: DS.attr(),
@@ -28,19 +30,21 @@ export default DS.Model.extend({
   q11Score: DS.attr(),
   q12Score: DS.attr(),
 
+  // TODO: This should be refactored into a helper method and refactored to use an iteration instead
   aceScore: Ember.computed('firstName','lastName', function(){
-    return  parseInt(this.get('q1Score') ? 1 : 0) +
-            parseInt(this.get('q2Score') ? 1 : 0) +
-            parseInt(this.get('q3Score') ? 1 : 0) +
-            parseInt(this.get('q4Score') ? 1 : 0) +
-            parseInt(this.get('q5Score') ? 1 : 0) +
-            parseInt(this.get('q6Score') ? 1 : 0) +
-            parseInt(this.get('q7Score') ? 1 : 0) +
-            parseInt(this.get('q8Score') ? 1 : 0) +
-            parseInt(this.get('q9Score') ? 1 : 0) +
-            parseInt(this.get('q10Score') ? 1 : 0) +
-            parseInt(this.get('q11Score') ? 1 : 0) +
-            parseInt(this.get('q12Score') ? 1 : 0);
+    console.log(this.get('q1Score'));
+    return  Number(JSON.parse(this.get('q1Score') || false)) +
+            Number(JSON.parse(this.get('q2Score') || false)) +
+            Number(JSON.parse(this.get('q3Score') || false)) +
+            Number(JSON.parse(this.get('q4Score') || false))
+            Number(JSON.parse(this.get('q5Score') || false)) +
+            Number(JSON.parse(this.get('q6Score') || false)) +
+            Number(JSON.parse(this.get('q7Score') || false)) +
+            Number(JSON.parse(this.get('q8Score') || false)) +
+            Number(JSON.parse(this.get('q9Score') || false)) +
+            Number(JSON.parse(this.get('q10Score') || false)) +
+            Number(JSON.parse(this.get('q11Score') || false)) +
+            Number(JSON.parse(this.get('q12Score') || false))
   }),
 
   aceScoreSum: Ember.computed.sum('aceScore')

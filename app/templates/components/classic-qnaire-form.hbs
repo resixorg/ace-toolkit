@@ -1,5 +1,7 @@
 <div class="form-group">
 		<h3>Personal Details</h3>
+		<p><span class="toolkit-inline-help">You may input the name of the client (but it is not mandatory to do so).</span></p>
+
 		<label for="firstName">First Name</label>
 		{{input type="text" value=model.firstName size="50" id="firstName" class="form-control" placeholder="First Name"}}<br/>
 		<label for="lastName">Last Name</label>
@@ -61,19 +63,19 @@
 			<div class="panel-footer">
 				<div class="btn-group" data-toggle="buttons">
 					<label class="btn btn-primary">
-						{{ radio-button name='q3Score' value="false" groupValue=model.q2Score class="btn btn-primary"}} No
+						{{ radio-button name='q3Score' value="false" groupValue=model.q3Score class="btn btn-primary"}} No
 					</label>
 					<label class="btn btn-primary">
-						{{ radio-button name='q3Score' value="true" groupValue=model.q2Score class="btn btn-primary"}} Yes
+						{{ radio-button name='q3Score' value="true" groupValue=model.q3Score class="btn btn-primary"}} Yes
 					</label>
 				</div>
 			</div>
 		</div>
 
-		{!-- Question 4 --}}
+		{{!-- Question 4 --}}
 		<div class="panel panel-default">
 			<div class="panel-heading">
-				Question 3
+				Question 4
 			</div>
 			<div class="panel-body">
 				Did an adult or person at least 5 years older than you ever… Touch or fondle you or have you touch their body in a sexual way? or Attempt or actually have oral, anal, or vaginal intercourse with you?
@@ -81,10 +83,10 @@
 			<div class="panel-footer">
 				<div class="btn-group" data-toggle="buttons">
 					<label class="btn btn-primary">
-						{{ radio-button name='q3Score' value="false" groupValue=model.q2Score class="btn btn-primary"}} No
+						{{ radio-button name='q4Score' value="false" groupValue=model.q4Score class="btn btn-primary"}} No
 					</label>
 					<label class="btn btn-primary">
-						{{ radio-button name='q3Score' value="true" groupValue=model.q2Score class="btn btn-primary"}} Yes
+						{{ radio-button name='q4Score' value="true" groupValue=model.q4Score class="btn btn-primary"}} Yes
 					</label>
 				</div>
 			</div>

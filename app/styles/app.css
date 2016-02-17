@@ -13,6 +13,10 @@ body {
 	margin: 0px;
 }
 
+span.label {
+	font-size: 1em;
+}
+
 .flex-container {
   padding: 0;
   margin: 0;

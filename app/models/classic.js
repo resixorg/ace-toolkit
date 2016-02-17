@@ -35,7 +35,7 @@ export default DS.Model.extend({
     return  Number(JSON.parse(this.get('q1Score') || false)) +
             Number(JSON.parse(this.get('q2Score') || false)) +
             Number(JSON.parse(this.get('q3Score') || false)) +
-            Number(JSON.parse(this.get('q4Score') || false))
+            Number(JSON.parse(this.get('q4Score') || false)) +
             Number(JSON.parse(this.get('q5Score') || false)) +
             Number(JSON.parse(this.get('q6Score') || false)) +
             Number(JSON.parse(this.get('q7Score') || false)) +
@@ -43,7 +43,7 @@ export default DS.Model.extend({
             Number(JSON.parse(this.get('q9Score') || false)) +
             Number(JSON.parse(this.get('q10Score') || false)) +
             Number(JSON.parse(this.get('q11Score') || false)) +
-            Number(JSON.parse(this.get('q12Score') || false))
+            Number(JSON.parse(this.get('q12Score') || false));
   }),
 
   aceScoreSum: Ember.computed.sum('aceScore')

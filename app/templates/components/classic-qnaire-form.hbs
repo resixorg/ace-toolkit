@@ -1,0 +1,50 @@
+<div class="form-group">
+		<h3>Personal Details</h3>
+		<label for="firstName">First Name</label>
+		{{input type="text" value=model.firstName size="50" id="firstName" class="form-control" placeholder="First Name"}}<br/>
+		<label for="lastName">Last Name</label>
+		{{input type="text" value=model.lastName size="50" id="lastName" class="form-control" placeholder="Last Name"}}<br/>
+	</div>
+	{{!-- Questionnaire --}}
+	<div class="form-group">
+		<h3>Questions</h3>
+		<div class="panel panel-default">
+			{{!-- Question 1 --}}
+			<div class="panel-heading">
+				Question 1
+			</div>
+			<div class="panel-body">
+				Before your 18th birthday, did a parent or other adult in the household often or very often swear at you, insult you, put you down, or humiliate you? or act in a way that made you afraid that you might be physically hurt?
+			</div>
+			<div class="panel-footer">
+				<div class="btn-group" data-toggle="buttons">
+					<label class="btn btn-primary">
+						{{ radio-button name='q1Score' value="false" groupValue=model.q1Score class="btn btn-primary"}} No
+					</label>
+					<label class="btn btn-primary">
+						{{ radio-button name='q1Score' value="true" groupValue=model.q1Score class="btn btn-primary"}} Yes
+					</label>
+				</div>
+			</div>
+		</div>
+		<div class="panel panel-default">
+			{{!-- Question 1 --}}
+			<div class="panel-heading">
+				Question 2
+			</div>
+			<div class="panel-body">
+				Before your 18th birthday, did a parent or other adult in the household often or very often swear at you, insult you, put you down, or humiliate you? or act in a way that made you afraid that you might be physically hurt?
+			</div>
+			<div class="panel-footer">
+				<div class="btn-group" data-toggle="buttons">
+					<label class="btn btn-primary">
+						{{ radio-button name='q2Score' value="false" groupValue=model.q2Score class="btn btn-primary"}} No
+					</label>
+					<label class="btn btn-primary">
+						{{ radio-button name='q2Score' value="true" groupValue=model.q2Score class="btn btn-primary"}} Yes
+					</label>
+				</div>
+			</div>
+		</div>
+	</div>
+

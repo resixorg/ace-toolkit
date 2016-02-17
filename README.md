@@ -13,6 +13,9 @@ You will need the following things properly installed on your computer.
 * [Ember CLI](http://www.ember-cli.com/)
 * [PhantomJS](http://phantomjs.org/)
 
+## NPM
+NPM is managed using [NVM (Node Version Manager)][1].
+
 ## Installation
 
 * `git clone <repository-url>` this repository
@@ -21,9 +24,12 @@ You will need the following things properly installed on your computer.
 * `bower install`
 
 ## Running / Development
-
-* `ember server`
+* Run the command `ember server`
 * Visit your app at [http://localhost:4200](http://localhost:4200).
+
+In case the `ember` command is not found, this is probably due to the fact that NVM has not picked up the definition in the `.nvmrc` file, and therefore not switched to the f
+
+Execute the command `nvm use` to force NVM to read the local `.nvmrc` file and use the correct version of Node and NPM.
 
 ### Code Generators
 
@@ -54,4 +60,7 @@ Specify what it takes to deploy your app.
 # Upgrading
 1) Edit bower.js
 2) Run `bower install`
+
+# References
+[1]: https://github.com/creationix/nvm      "NVM"
 

@@ -1,1 +1,8 @@
-view.hbs
+<div class="container">
+	<div class="page-header">
+		<h2>View ACE Screening {{#link-to 'classics.edit' model}}<button type="button" class="btn btn-default navbar-btn">Edit</button>{{/link-to}}</h2>
+	</div>
+
+	{{classic-qnaire-form model=model}}
+
+</div>

@@ -3,8 +3,8 @@
 		<ul class="flex-container">
 			{{#each model as |classic|}}
 			<li class="flex-item">
-				{{#link-to "classics.classic" classic}}
-				{{classic-qnaire-list qnaire=classic}}
+				{{#link-to "classics.view" classic}}
+				{{classic-qnaire-list-item qnaire=classic}}
 				{{/link-to}}
 			</li>
 			{{/each}}

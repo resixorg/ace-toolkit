@@ -64,3 +64,11 @@ a.navbar-brand img {
   top: -12px;
   width: 100%;
 }
+
+div.panel-heading {
+  font-weight: bold;
+}
+
+div.panel-footer {
+  text-align: right;
+}

@@ -5,6 +5,9 @@
 
 	{{classic-qnaire-form model=model}}
 
-	<button class="btn btn-primary btn-sm new-artist-button" {{action "save"}}
+	<button class="btn btn-primary btn-sm" {{action "save"}}
 	{{bind-attr disabled=disabled}}>Save</button>
+
+	<button class="btn btn-default btn-sm" {{action "cancel"}}
+	{{bind-attr disabled=disabled}}>Cancel</button>
 </div>

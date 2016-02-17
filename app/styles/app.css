@@ -2,6 +2,17 @@ body {
 	font-family: Roboto, sans-serif;
 }
 
+.toolkit-inline-help {
+	color: #c0c0c0;
+	font-style: italic;
+}
+
+/* Overriding the margins */
+/* TODO: This should be handled a little more elegantly */
+.page-header {
+	margin: 0px;
+}
+
 .flex-container {
   padding: 0;
   margin: 0;
@@ -34,6 +45,20 @@ body {
   font-weight: bold;
   font-size: 1.2em;
   text-align: left;
+}
+
+@media (max-width: 500px) {
+  .flex-item {
+		width: 100%;
+	}
+}
+
+@media (max-width: 768px) {
+ 	.jumbotron {
+		padding-left: 20px;
+		padding-right: 20px;
+		margin: 0px;
+	}
 }
 
 ul.qnaire-list-item li {

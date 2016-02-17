@@ -8,13 +8,15 @@
 	{{!-- Questionnaire --}}
 	<div class="form-group">
 		<h3>Questions</h3>
+		<p>While you were growing up, during your first 18 years of life:</p>
+
+		{{!-- Question 1 --}}
 		<div class="panel panel-default">
-			{{!-- Question 1 --}}
 			<div class="panel-heading">
 				Question 1
 			</div>
 			<div class="panel-body">
-				Before your 18th birthday, did a parent or other adult in the household often or very often swear at you, insult you, put you down, or humiliate you? or act in a way that made you afraid that you might be physically hurt?
+				Did a parent or other adult in the household often or very often swear at you, insult you, put you down, or humiliate you? or act in a way that made you afraid that you might be physically hurt?
 			</div>
 			<div class="panel-footer">
 				<div class="btn-group" data-toggle="buttons">
@@ -27,13 +29,14 @@
 				</div>
 			</div>
 		</div>
+
+		{{!-- Question 2 --}}
 		<div class="panel panel-default">
-			{{!-- Question 1 --}}
 			<div class="panel-heading">
 				Question 2
 			</div>
 			<div class="panel-body">
-				Before your 18th birthday, did a parent or other adult in the household often or very often swear at you, insult you, put you down, or humiliate you? or act in a way that made you afraid that you might be physically hurt?
+				Did a parent or other adult in the household often or very often… Push, grab, slap, or throw something at you? or Ever hit you so hard that you had marks or were injured?
 			</div>
 			<div class="panel-footer">
 				<div class="btn-group" data-toggle="buttons">
@@ -46,5 +49,44 @@
 				</div>
 			</div>
 		</div>
-	</div>
 
+		{{!-- Question 3 --}}
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				Question 3
+			</div>
+			<div class="panel-body">
+				Did an adult or person at least 5 years older than you ever… Touch or fondle you or have you touch their body in a sexual way? or Attempt or actually have oral, anal, or vaginal intercourse with you?
+			</div>
+			<div class="panel-footer">
+				<div class="btn-group" data-toggle="buttons">
+					<label class="btn btn-primary">
+						{{ radio-button name='q3Score' value="false" groupValue=model.q2Score class="btn btn-primary"}} No
+					</label>
+					<label class="btn btn-primary">
+						{{ radio-button name='q3Score' value="true" groupValue=model.q2Score class="btn btn-primary"}} Yes
+					</label>
+				</div>
+			</div>
+		</div>
+
+		{!-- Question 4 --}}
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				Question 3
+			</div>
+			<div class="panel-body">
+				Did an adult or person at least 5 years older than you ever… Touch or fondle you or have you touch their body in a sexual way? or Attempt or actually have oral, anal, or vaginal intercourse with you?
+			</div>
+			<div class="panel-footer">
+				<div class="btn-group" data-toggle="buttons">
+					<label class="btn btn-primary">
+						{{ radio-button name='q3Score' value="false" groupValue=model.q2Score class="btn btn-primary"}} No
+					</label>
+					<label class="btn btn-primary">
+						{{ radio-button name='q3Score' value="true" groupValue=model.q2Score class="btn btn-primary"}} Yes
+					</label>
+				</div>
+			</div>
+		</div>
+	</div>

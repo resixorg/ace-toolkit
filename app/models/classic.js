@@ -27,5 +27,22 @@ export default DS.Model.extend({
   q10Score: DS.attr(),
   q11Score: DS.attr(),
   q12Score: DS.attr(),
-  aceScore: DS.attr()
+
+  aceScore: Ember.computed('firstName','lastName', function(){
+    return  parseInt(this.get('q1Score') ? 1 : 0) +
+            parseInt(this.get('q2Score') ? 1 : 0) +
+            parseInt(this.get('q3Score') ? 1 : 0) +
+            parseInt(this.get('q4Score') ? 1 : 0) +
+            parseInt(this.get('q5Score') ? 1 : 0) +
+            parseInt(this.get('q6Score') ? 1 : 0) +
+            parseInt(this.get('q7Score') ? 1 : 0) +
+            parseInt(this.get('q8Score') ? 1 : 0) +
+            parseInt(this.get('q9Score') ? 1 : 0) +
+            parseInt(this.get('q10Score') ? 1 : 0) +
+            parseInt(this.get('q11Score') ? 1 : 0) +
+            parseInt(this.get('q12Score') ? 1 : 0);
+  }),
+
+  aceScoreSum: Ember.computed.sum('aceScore')
+
 });

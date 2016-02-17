@@ -16,6 +16,9 @@ export default Ember.Route.extend({
 					self.transitionTo('classics.index');
 				}
 			);
+		},
+		cancel: function() {
+			this.transitionTo('classics');
 		}
 	}
 });

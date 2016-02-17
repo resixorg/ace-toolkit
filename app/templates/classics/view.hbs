@@ -3,6 +3,10 @@
 		<h2>View ACE Screening {{#link-to 'classics.edit' model}}<button type="button" class="btn btn-default navbar-btn">Edit</button>{{/link-to}}</h2>
 	</div>
 
-	{{classic-qnaire-form model=model}}
+	{{!-- TODO: Make sure that another view is used --}}
+	{{classic-qnaire-view model=model}}
+
+	<button class="btn btn-default btn-sm" {{action "cancel"}}
+	{{bind-attr disabled=disabled}}>Back</button>
 
 </div>

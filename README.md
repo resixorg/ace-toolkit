@@ -1,66 +1,25 @@
-# Ace-screener
+# The ACE Toolkit
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+## Introduction
+**The ACE Toolkit by the Resix Organization is an ambitious suite of technology-mediated tools and services that have the collective goal of enabling individuals and therapists alike to screen for, alleviate the effects of, and, to the widest extent possible, aid the prevention of Adverse Childhood Experiences (ACEs) across people of all ages.**
 
-## Prerequisites
+# ACE Toolkit Contents
+The contents of the ACE Toolkit are under active development. Read more about the currently planned products and services below.
 
-You will need the following things properly installed on your computer.
+<img src="https://github.com/resixorg/ace-toolkit/blob/master/website/images/what-is-the-ace-toolkit.jpg"/>
 
-* [Git](http://git-scm.com/)
-* [Node.js](http://nodejs.org/) (with NPM)
-* [Bower](http://bower.io/)
-* [Ember CLI](http://www.ember-cli.com/)
-* [PhantomJS](http://phantomjs.org/)
+## [ACE Screener](https://github.com/resixorg/ace-toolkit/wiki/ACE-Screener)
+The first product released will be a screening tool for ACEs to be used by individuals and therapist alike. We find that there is a lack of simple and easy-to-use screening tools that allow for easy embedding in therapist and community websites, and which by default preserve the privacy of the people being screened.
 
-## NPM
-NPM is managed using [NVM (Node Version Manager)][1].
+» [Read more about the ACE Screener on our wiki](https://github.com/resixorg/ace-toolkit/wiki/ACE-Screener)
 
-## Installation
+<hr/>
 
-* `git clone <repository-url>` this repository
-* change into the new directory
-* `npm install`
-* `bower install`
+## About Resix
+The Resix Organisation (www.resix.org) is a non-profit foundation developing open source software for resilience, self-empowerment, peer-based support, mental health, and societal development. 
 
-## Running / Development
-* Run the command `ember server`
-* Visit your app at [http://localhost:4200](http://localhost:4200).
+The Resix Organisation also works to build and release IT-mediated tools and interventions as _open content_, thereby supporting and stimulating the democratization of such tools and the psychological interventions contained herein. 
 
-In case the `ember` command is not found, this is probably due to the fact that NVM has not picked up the definition in the `.nvmrc` file, and therefore not switched to the f
-
-Execute the command `nvm use` to force NVM to read the local `.nvmrc` file and use the correct version of Node and NPM.
-
-### Code Generators
-
-Make use of the many generators for code, try `ember help generate` for more details
-
-### Running Tests
-
-* `ember test`
-* `ember test --server`
-
-### Building
-
-* `ember build` (development)
-* `ember build --environment production` (production)
-
-### Deploying
-
-Specify what it takes to deploy your app.
-
-## Further Reading / Useful Links
-
-* [ember.js](http://emberjs.com/)
-* [ember-cli](http://www.ember-cli.com/)
-* Development Browser Extensions
-  * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
-  * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
-
-# Upgrading
-1) Edit bower.js
-2) Run `bower install`
-
-# References
-[1]: https://github.com/creationix/nvm      "NVM"
+## About the ACE Study
+The ACE Study scientifically proved the link between childhood trauma and long-term health and social consequences and is one of the most important scientific studies in recent times (http://www.cdc.gov/violenceprevention/acestudy/index.html).
 

@@ -32,7 +32,6 @@ export default DS.Model.extend({
 
   // TODO: This should be refactored into a helper method and refactored to use an iteration instead
   aceScore: Ember.computed('firstName','lastName', function(){
-    console.log(this.get('q1Score'));
     return  Number(JSON.parse(this.get('q1Score') || false)) +
             Number(JSON.parse(this.get('q2Score') || false)) +
             Number(JSON.parse(this.get('q3Score') || false)) +

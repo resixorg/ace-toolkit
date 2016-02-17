@@ -11,6 +11,15 @@ export default DS.Model.extend({
   lastName: DS.attr('string'),
   age: DS.attr(),
 
+  renderName: Ember.computed(function() {
+      const firstName = this.get('firstName');
+      if (firstName != null) {
+        return firstName;
+      } else {
+        return "Anonymous";
+      }
+  }),
+
   fullName: Ember.computed('firstName','lastName', function(){
   	return `${this.get('firstName')} ${this.get('lastName')}`;
   }),

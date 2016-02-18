@@ -1,11 +1,66 @@
 
-  <h4>Statistic</h4>
+<h4>Statistic</h4>
+<p>
   <span class="toolkit-inline-help">Statistic across all screenings.</span>
-  <ul class="list-unstyled qnaire-list-item">
-    <li class="qnaire-list-item item">
-      <span class="label label-primary">Total ACE Score</span> {{aceScoreStatistic.sum}}
-    </li>
-    <li class="qnaire-list-item item">
-      <span class="label label-primary">Average ACE Score</span> {{aceScoreStatistic.average}}
-    </li>
-  </ul>
+</p>
+
+<style>
+.statistic-flex-container {
+    display: -webkit-flex;
+    display: flex;
+    width: 100%;
+    /*height: 250px;*/
+}
+
+.statistic-flex-item {
+    width: 45%;
+    /*height: 100px;*/
+    /*margin: 10px;*/
+}
+</style>
+
+<div class="statistic-flex-container">
+  <div class="statistic-flex-item">
+    <ul class="list-unstyled qnaire-list-item">
+      <li class="qnaire-list-item item">
+        <span class="label label-primary">Total Score</span> {{aceScoreStatistic.sum}}
+      </li>
+      <li class="qnaire-list-item item">
+        <span class="label label-primary">Average Score</span> {{aceScoreStatistic.average}}
+      </li>
+      <li class="qnaire-list-item item">
+        <span class="label label-primary">Top Three</span> {{aceScoreStatistic.topThree}}
+      </li>
+    </ul>
+  </div>
+  <div class="statistic-flex-item">
+    <canvas id="myChart" width="180" height="180"></canvas>
+    <script>
+      // Get the context of the canvas element we want to select
+      var ctx = document.getElementById("myChart").getContext("2d");
+      var data = {
+        labels: [
+          "Q1", "Q2", "Q3", "Q4",
+          "Q5", "Q6", "Q7", "Q8",
+          "Q9", "Q10", "Q11", "Q12"
+        ],
+        datasets: [
+            {
+                label: "My First dataset",
+                fillColor: "rgba(0, 138, 237, 0.2)",
+                strokeColor: "rgba(69, 157, 219, 1)",
+                pointColor: "rgba(220,220,220,1)",
+                pointStrokeColor: "#fff",
+                pointHighlightFill: "#fff",
+                pointHighlightStroke: "rgba(220,220,220,1)",
+                data: [
+                  2,4,3,7,
+                  5,3,6,4,
+                  1,3,5,2]
+            }
+        ]
+    };
+      var myNewChart = new Chart(ctx).Radar(data);
+    </script>
+  </div>
+</div>

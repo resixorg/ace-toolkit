@@ -34,6 +34,13 @@ span.label {
   /*flex-direction: row;*/
 }
 
+/* Subclassing the Bootstrap Danger Button style */
+button.btn-open {
+	background-color: white;
+	border-color: #d43f3a;
+	color: #d43f3a;
+}
+
 .flex-item {
   background: white;
   padding: 5px;

@@ -14,7 +14,7 @@ export default Ember.Component.extend({
 		if (count == undefined || count == 0) {
 			var average = 0;
 		} else {
-			var average = sum / count;
+			var average = (sum / count).toFixed(2);
 		}
 
 		return {sum: sum, count: count, average: average};

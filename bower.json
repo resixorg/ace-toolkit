@@ -16,7 +16,8 @@
     "lodash": "~3.7.0",
     "Faker": "~3.0.0",
     "moment": "~2.10.6",
-    "localforage": "~1.2.1"
+    "localforage": "~1.2.1",
+    "Chart.js": "chartjs#~1.0.2"
   },
   "devDependencies": {
     "bootstrap": "~3.3.5"

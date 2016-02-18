@@ -35,10 +35,41 @@ span.label {
 }
 
 /* Subclassing the Bootstrap Danger Button style */
-button.btn-open {
+button.btn-danger-open {
 	background-color: white;
 	border-color: #d43f3a;
 	color: #d43f3a;
+}
+
+/* Subclassing the Bootstrap Primary Button style */
+button.btn-primary-open {
+	background-color: white;
+	border-color: #2E6DA5;
+	color: #2E6DA5;
+}
+
+/* Highlight the UI elements which are mocked (and thus not yet functional/interactive) */
+.mock {
+	background-color: cornsilk !important;
+}
+
+.mock-outline {
+	border: 2px solid;
+	border-color: cornsilk !important;
+}
+
+/* Subclassing the Bootstrap Primary Button style */
+span.label-primary-open {
+	background-color: white;
+	border-color: #2E6DA5;
+	border: 1px solid;
+	color: #2E6DA5;
+	font-size: 0.9em;
+}
+
+canvas#myChart {
+	width: 180px;
+	height: 180px;
 }
 
 .flex-item {

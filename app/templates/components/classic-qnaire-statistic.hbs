@@ -4,18 +4,20 @@
   <span class="toolkit-inline-help">Statistic across all screenings.</span>
 </p>
 
+<div class="alert alert-warning alert-dismissible mock" role="alert">
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+  <strong>Please note</strong> that functionality marked with the cornflower color is <em>mock</em> functionality included in the development releases of the ACE Toolkit to illustrate functionality to-be
+</div>
+
 <style>
 .statistic-flex-container {
     display: -webkit-flex;
     display: flex;
     width: 100%;
-    /*height: 250px;*/
 }
 
 .statistic-flex-item {
-    width: 45%;
-    /*height: 100px;*/
-    /*margin: 10px;*/
+    width: 43%;
 }
 </style>
 
@@ -23,13 +25,19 @@
   <div class="statistic-flex-item">
     <ul class="list-unstyled qnaire-list-item">
       <li class="qnaire-list-item item">
-        <span class="label label-primary">Total Score</span> {{aceScoreStatistic.sum}}
+        <span class="label label-primary label-primary-open">Total Score</span> <strong>{{aceScoreStatistic.sum}}</strong>
       </li>
       <li class="qnaire-list-item item">
-        <span class="label label-primary">Average Score</span> {{aceScoreStatistic.average}}
+        <span class="label label-primary label-primary-open mock">Top ACEs</span> <strong>{{aceScoreStatistic.topThree}} Q4, Q7, Q5</strong>
       </li>
       <li class="qnaire-list-item item">
-        <span class="label label-primary">Top Three</span> {{aceScoreStatistic.topThree}}
+        <span class="label label-primary label-primary-open">Average Score</span> <strong>{{aceScoreStatistic.average}}</strong>
+      </li>
+      <li class="qnaire-list-item item">
+        <span class="label label-primary label-primary-open mock">Median</span> <strong>45%</strong>
+      </li>
+      <li class="qnaire-list-item item">
+        <span class="label label-primary label-primary-open mock">Mode</span> <strong>45%</strong>
       </li>
     </ul>
   </div>

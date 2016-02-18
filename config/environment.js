@@ -31,6 +31,16 @@ module.exports = function(environment) {
 
   if (environment === 'development') {
     ENV['ember-cli-mirage'] = {enabled: false};
+    ENV.contentSecurityPolicy = {
+    'default-src': "'none'",
+    // 'script-src': "'self' 'unsafe-eval' https://cdn.firebase.com/ ",
+    'font-src': "'self'",
+    'connect-src': "'self'",
+    'img-src': "'self'",
+    'style-src': "'self' 'unsafe-inline'",
+    'media-src': "'self'",
+    'script-src': "'self' 'unsafe-eval' 'unsafe-inline'"
+  };
     // ENV.APP.LOG_RESOLVER = true;
     // ENV.APP.LOG_ACTIVE_GENERATION = true;
     // ENV.APP.LOG_TRANSITIONS = true;
